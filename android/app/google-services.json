@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "445369250919",
+    "project_id": "talk-tube-17148",
+    "storage_bucket": "talk-tube-17148.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445369250919:android:83c8c6948aa7ad50a3d0c2",
+        "android_client_info": {
+          "package_name": "com.example.talk_tube"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445369250919-f2o39rii24bjoh5alejf1ulujlcurs3a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.talk_tube",
+            "certificate_hash": "fcdef21f22789199a02418d28f20dc1786417340"
+          }
+        },
+        {
+          "client_id": "445369250919-k6u2ue77khrlv7oqinq6pdvu8dv4l4tu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYDpNHtJJ1R6XTyvGtO74e29pEm1IOrQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445369250919-k6u2ue77khrlv7oqinq6pdvu8dv4l4tu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

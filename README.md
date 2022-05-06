@@ -1,6 +1,6 @@
-# talk_tube
+# talk_tube_1
 
-UTT graduation project.
+A new Flutter project.
 
 ## Getting Started
 

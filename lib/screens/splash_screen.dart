@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:talk_tube/controller/login_controller.dart';
-import 'package:talk_tube/main.dart';
+import 'package:talk_tube_1/controller/login_controller.dart';
+import 'package:talk_tube_1/main.dart';
 
 import 'introduction_screen.dart';
 
@@ -64,7 +64,7 @@ class _SplashScreenState extends State<SplashScreen>
     Future.delayed(const Duration(seconds: 4), () {
       LoginController controller = Get.find<LoginController>();
       if (controller.auth.currentUser != null) {
-        Get.offAllNamed(Routes.DATA);
+        Get.offAllNamed(Routes.DASHBOARD);
       } else {
         Navigator.push(context,
             MaterialPageRoute(builder: (context) => IntroductionScreen()));

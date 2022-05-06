@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:talk_tube/models/intro_model.dart';
+import 'package:talk_tube_1/models/intro_model.dart';
 
 class IntroView extends StatelessWidget {
   final Intro intro;

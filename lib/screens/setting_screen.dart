@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:talk_tube_1/screens/profile_screen.dart';
 
 import '../controller/setting_controller.dart';
 
@@ -17,7 +18,9 @@ class SettingScreen extends GetView<SettingController> {
         backgroundColor: Theme.of(context).scaffoldBackgroundColor,
         flexibleSpace: SafeArea(
           child: GestureDetector(
-            onTap: () {},
+            onTap: () {
+              Get.to(const ProfileScreen());
+            },
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(

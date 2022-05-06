@@ -5,8 +5,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_storage/firebase_storage.dart';
 import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:talk_tube/models/user_model.dart';
-import 'package:talk_tube/screens/verification_screen.dart';
+import 'package:talk_tube_1/models/user_model.dart';
+import 'package:talk_tube_1/screens/verification_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 class AppFirebase {
@@ -54,4 +54,48 @@ class AppFirebase {
     String link = await snapshot.ref.getDownloadURL();
     return link;
   }
+
+  Future<String?> updateName(String name, String uid) async {
+    try{
+      Map<String, Object> map = {};
+      map['name'] = name;
+      await FirebaseFirestore.instance.collection('users').doc(uid).update(map);
+      return name;
+    } on Exception catch(e){
+      return Future.value(null);
+    }
+  }
+
+  Future<String?> updateStatus(String status, String uid) async {
+    try{
+      Map<String, Object> map = {};
+      map['status'] = status;
+      await FirebaseFirestore.instance.collection('users').doc(uid).update(map);
+      return status;
+    } on Exception catch(e){
+      return Future.value(null);
+    }
+  }
+
+  Future<String?> updateImage(String imagePath, String uid) async {
+    try{
+      Map<String, Object> map = {};
+      map['image'] = imagePath;
+      await FirebaseFirestore.instance.collection('users').doc(uid).update(map);
+      FirebaseAuth.instance.currentUser?.updatePhotoURL(imagePath);
+      return imagePath;
+    } on Exception catch(e){
+      return Future.value(null);
+    }
+  }
+
+  Future<List<UserModel>?> getAppContacts() async {
+    try{
+      final data = await FirebaseFirestore.instance.collection('users').get();
+      return data.docs.map((e) => UserModel.fromJson(e.data())).toList();
+    } on Exception catch(e){
+      return Future.value(null);
+    }
+  }
+
 }

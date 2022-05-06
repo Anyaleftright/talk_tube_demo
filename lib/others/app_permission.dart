@@ -8,4 +8,8 @@ class AppPermission {
   Future<PermissionStatus> isCameraPermissionOk() async {
     return Permission.camera.status;
   }
+
+  Future<PermissionStatus> isContactPermissionOk() async {
+    return Permission.contacts.status;
+  }
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
-import 'package:talk_tube/models/intro_model.dart';
-import 'package:talk_tube/screens/number_screen.dart';
-import 'package:talk_tube/widgets/intro_view.dart';
+import 'package:talk_tube_1/models/intro_model.dart';
+import 'package:talk_tube_1/screens/number_screen.dart';
+import 'package:talk_tube_1/widgets/intro_view.dart';
 
 class IntroductionScreen extends StatelessWidget {
   IntroductionScreen({Key? key}) : super(key: key);

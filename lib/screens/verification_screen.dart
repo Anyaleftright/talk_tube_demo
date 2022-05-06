@@ -3,7 +3,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
 import 'package:loading_overlay/loading_overlay.dart';
 import 'package:pin_input_text_field/pin_input_text_field.dart';
-import 'package:talk_tube/controller/login_controller.dart';
+import 'package:talk_tube_1/controller/login_controller.dart';
 
 class VerificationScreen extends GetView<LoginController> {
   const VerificationScreen({Key? key}) : super(key: key);

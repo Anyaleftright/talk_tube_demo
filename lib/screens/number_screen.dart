@@ -1,8 +1,8 @@
 import 'package:country_code_picker/country_code_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:talk_tube/controller/login_controller.dart';
-import 'package:talk_tube/screens/verification_screen.dart';
+import 'package:talk_tube_1/controller/login_controller.dart';
+import 'package:talk_tube_1/screens/verification_screen.dart';
 
 class NumberScreen extends GetView<LoginController> {
   const NumberScreen({Key? key}) : super(key: key);

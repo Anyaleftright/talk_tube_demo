@@ -5,10 +5,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:talk_tube/models/user_model.dart';
-import 'package:talk_tube/network/app_firebase.dart';
-import 'package:talk_tube/others/app_permission.dart';
-import 'package:talk_tube/screens/user_info_screen.dart';
+import 'package:talk_tube_1/models/user_model.dart';
+import 'package:talk_tube_1/network/app_firebase.dart';
+import 'package:talk_tube_1/others/app_permission.dart';
+import 'package:talk_tube_1/screens/user_info_screen.dart';
 
 import '../main.dart';
 import '../others/app_util.dart';

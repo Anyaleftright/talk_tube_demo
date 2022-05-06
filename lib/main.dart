@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:get/get.dart';
-import 'package:talk_tube/app_theme.dart';
-import 'package:talk_tube/bindings/initial_binding.dart';
-import 'package:talk_tube/screens/dashboard.dart';
-import 'package:talk_tube/screens/splash_screen.dart';
-import 'package:talk_tube/screens/user_info_screen.dart';
+import 'package:talk_tube_1/app_theme.dart';
+import 'package:talk_tube_1/bindings/initial_binding.dart';
+import 'package:talk_tube_1/screens/dashboard.dart';
+import 'package:talk_tube_1/screens/splash_screen.dart';
+import 'package:talk_tube_1/screens/user_info_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

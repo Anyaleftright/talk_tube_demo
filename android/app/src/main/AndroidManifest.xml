@@ -1,10 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.talk_tube">
+    package="com.example.talk_tube_1">
 
     <application
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
-        android:label="talk_tube"
+        android:label="talk_tube_1"
         android:usesCleartextTraffic="true">
         <activity
             android:name=".MainActivity"
